@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Produtos - Barbearia Alura</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <!-- script to add a class Sticky to do the Static Navigation Bar On Scroll  -->
+            <script type="text/javascript">
+                window.addEventListener("scroll", function () {
+                    var header = document.querySelector("header")
+                    header.classList.toggle("sticky", window.scrollY > 0)
+                })
+
+            </script>
+            <img src="./img/logo.png">
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#localization">Localização</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="text-about">
+            <img src="img/man.png" alt="Beared man" class="littleimg">
+            <div>
+                <h1>Sobre a Barbearia Rock Clube</h1>
+                <p>Criada em 1980 por um Português Canadense, a Barbearia Rock Clube é o espaço perfeito
+                    para
+                    homens do século 20.</p>
+                <p>Algumas das maiores necessidades masculinas reservadas em um só lugar. Rock, Cerveja, e um habilidoso
+                    e confiável profissional.</p>
+                <p>Um espaço com ambiente refinado, que agrada a todos. Com madeira e luzes moldando a épocas antigas.
+                </p>
+            </div>
+            <img src="img/razor.png" alt="razor" class="littleimg">
+        </div>
+
+
+
+        <img src="img/barbershop.jpeg" class="imgbarbershop">
+
+        <div class="benefits">
+            <div>
+                <h2>Benefícios</h2>
+                <ul class="benefitstext">
+                    <li>Profissionais Qualificados</li>
+                    <li>Pontualidade no Serviço</li>
+                    <li>Espaço Diferenciado</li>
+                    <li>Limpeza</li>
+                    <li>Lugar Amistoso e de época</li>
+                </ul>
+            </div>
+            <img src="img/benefits.jpg">
+        </div>
+
+        <div class="bar">
+            <img src="./img/bar.jpg">
+            <div>
+                <h2> Nosso Bar</h2>
+                <ul class="benefitstext">
+                    <li>Variada seleção de bebidas</li>
+                    <li>Barman para atender seus pedidos</li>
+                    <li>Consulte nosso menu para todas as opções!</li>
+                    <li>Muito Rock'n Roll para escutar</li>
+                    <li>Beba com moderação!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+
+            <ul class="pricetag">
+                <h2 id="services">Nossos serviços</h2>
+                <li><img src="./img/hair.png" alt="cabelo"><br>Corte de Cabelo <br> R$ 30,00 </li>
+                <li><img src="./img/beard.png"><br>Corte de Barba <br> R$ 15,00</li>
+                <li><img src="./img/hair+beard.png"><br>Cabelo + Barba <br> R$ 40,00</li>
+            </ul>
+        </div>
+
+        
+
+        <section id="localization">
+            <h2>Nossa Localização</h2>
+            <p>Estamos localizados no centro de São Paulo!</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100945.21942164174!2d-46.65769290784442!3d-23.546084562353972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1665426724722!5m2!1sen!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Nosso número para contato é: (22) 22 2222-2222</p>
+            <br>
+            <p>Converse conosco também pelas nossas redes sociais!!</p>
+
+            <div class="socialmedia">
+                <img src="./img/instagram.png">
+                <p>@BarbeariaRockClube</p>
+            </div>
+            <div class="socialmedia">
+                <img src="./img/facebook.png">
+                <p>/BarbeariaRockClube</p>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <img src="./img/logo.png">
+            <p>&copy; Copyright Barbearia Rock Clube 2022.</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
